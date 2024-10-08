@@ -9,3 +9,16 @@ The assumptions include the standard log structure mentioned ( I have gone throu
 
 I have verified the functionality of the code using different test files for the flowlogs.txt as well as lookup.csv, one such instances were uploaded here, the code handlles the requirements such as case_insensitivity, and same tag can have different port, protocol combinations and displays the results in output.txt file
 
+## Steps to run the code
+
+1)Clone the repo using the following command
+```
+https://github.com/sowmithoriginal/codingchallenge.git
+
+```
+
+2)Run the main.py file
+
+```
+python3 main.py
+```
