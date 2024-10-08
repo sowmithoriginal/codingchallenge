@@ -1,4 +1,4 @@
-# codingchallenge
+# Codingchallenge
 
 ## Assumptions, Functionality
 The code is divided into different helper functions for parsing the lookup table, constructing the mapper of (dst port, protocol) to the tag, and one which parses the logs and maps each log to a respective tag based on the lookup values, and finally one function for writing to the output file with the relevant information from the constructed mappers from the functions.
@@ -7,4 +7,5 @@ The assumptions include the standard log structure mentioned ( I have gone throu
 
 ## Testing, Results
 
-I have verified the functionality of the code using different test files for the flowlogs.txt as well as lookup.csv
+I have verified the functionality of the code using different test files for the flowlogs.txt as well as lookup.csv, one such instances were uploaded here, the code handlles the requirements such as case_insensitivity, and same tag can have different port, protocol combinations and displays the results in output.txt file
+
