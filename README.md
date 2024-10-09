@@ -14,7 +14,7 @@ This Python script is designed to process log entries and assign tags based on a
 
 ## Assumptions and Flexibility
 
-* **Log Structure:** Assumes a standard log format, allowing for easy adaptation to minor changes.
+* **Log Structure:** Assumes a standard log format, allowing for easy adaptation to minor changes.(I have gone through the portal which has a definite structure for logs with feilds and their data types, so any changes in the format of logs, could be seamlessly integrated with the help of process_flow_logs function)
 * **Default Protocols:** Uses default values for common protocols (TCP, UDP, ICMP).
 
 ## Testing and Verification
