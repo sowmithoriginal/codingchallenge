@@ -1,30 +1,37 @@
-# Codingchallenge
+# Coding Challenge
 
-## Assumptions, Functionality
-Helper Functions: The code is organized into well-defined helper functions, each performing a specific task:
-Parsing the lookup table (CSV file)
-Constructing a mapper that links destination port and protocol combinations to tags
-Parsing log entries (text file)
-Matching each log entry to a tag based on the lookup table data
-Writing mapped results to an output file
-Flexibility: The code assumes a standard log structure, allowing for seamless integration if the format changes slightly. Modifications would primarily involve the process_flow_logs helper function.
-Defaults: Default values are used for common protocols like TCP, UDP, and ICMP.
+## Project Overview
 
+This Python script is designed to process log entries and assign tags based on a provided lookup table. It efficiently maps destination port and protocol combinations to corresponding tags, ensuring accurate categorization.
 
-## Testing, Results
+## Functionality
 
-I have verified the functionality of the code using different test files for the flowlogs.txt as well as lookup.csv, one such instances were uploaded here, the code handles the requirements such as case_insensitivity, and same tag can have different port, protocol combinations and displays the results in output.txt file
+* **Lookup Table Parsing:** Reads a CSV file containing lookup table data, mapping destination ports and protocols to tags.
+* **Mapper Construction:** Creates a dictionary-based mapper that associates destination port-protocol combinations with their respective tags.
+* **Log Entry Parsing:** Processes log entries from a text file, extracting relevant information like destination port, protocol, and timestamp.
+* **Tag Matching:** Matches parsed log entries to tags using the constructed mapper.
+* **Output Generation:** Writes the matched log entries and their corresponding tags to an output file (`output.txt`).
 
-## Steps to run the code
+## Assumptions and Flexibility
 
-1)Clone the repo using the following command
-```
-https://github.com/sowmithoriginal/codingchallenge.git
+* **Log Structure:** Assumes a standard log format, allowing for easy adaptation to minor changes.
+* **Default Protocols:** Uses default values for common protocols (TCP, UDP, ICMP).
 
-```
+## Testing and Verification
 
-2)Run the main.py file
+Rigorous testing has been conducted using various test files to ensure:
 
-```
-python3 main.py
-```
+* Correct tag assignment for different port-protocol combinations.
+* Handling of case-insensitivity.
+* Proper output generation.
+
+## Usage
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/sowmithoriginal/codingchallenge.git
+2. **Navigate to the directory and run main.py:**
+
+   ```bash
+   python3 main.py
